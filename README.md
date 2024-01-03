@@ -1,8 +1,11 @@
 <h1 align="center">
 Observer
 
-<img src="assets/image.png">
 </h1>
+
+<h5 align = "center">
+    <img src="assets/image.png">
+</h5>
 
 A web scraper for getting all of the RIck and Morty Transcripts from Rickipedia.
 
