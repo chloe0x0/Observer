@@ -7,7 +7,7 @@ Observer
     <img src="assets/image.png">
 </h5>
 
-A web scraper for getting all of the RIck and Morty Transcripts from Rickipedia.
+A web scraper for getting all of the Rick and Morty Transcripts from Rickipedia.
 
 ## Usage
 
