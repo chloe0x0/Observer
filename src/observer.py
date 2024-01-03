@@ -14,7 +14,7 @@ def get_episode_urls():
     soup = BeautifulSoup(r.content, 'html.parser')
     rows = soup.findAll('a', class_="topictitle")
     rows = list(filter(lambda x : not x.text.startswith('Updates: '), rows))
-    return row
+    return rows
 
 def download_transcripts(download_path: str, urls: List[Tag]):
     '''
