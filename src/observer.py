@@ -19,19 +19,11 @@ def get_episode_urls():
 def download_transcripts(download_path: str, urls: List[Tag]):
     '''
     Given a download path and a list of episode urls download them.
-        path
-        |____S1
-        |
-        |_____S2
-        .
-        .
-        .
     '''
     for url in urls:
         r = requests.get(SITE_URL + '/' + url.get('href'))
         soup = BeautifulSoup(r.content, 'html.parser')
         text = soup.find('div', class_="content").text
-        # grab out the Season number (first 5 characters)
         season_idx = url.text[:2]
         episode_idx = url.text[3:5]
         path = os.path.join(download_path, season_idx)
